@@ -1,7 +1,12 @@
 import React,{useState} from 'react'
 
 const Education = () => {
-    const [count,setCount] = useState(0)
+    const [count,setCount] = useState(0);
+
+    function addCount(){
+        setCount(count + 1)
+    }
+    
   return (
     <div>
       <h1 className='my-6 font-bold text-3xl'>Education #{count}</h1>
