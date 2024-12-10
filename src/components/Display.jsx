@@ -4,10 +4,10 @@ import {FaMobile,FaEnvelope,FaHouseUser} from 'react-icons/fa'
 
 const Display = () => {
   return (
-    <div className='m-16 border-2  border-black rounded-lg w-2/5 flex '>
-      <div className='h-full bg-slate-600 w-2/5'>
-            <div className='pt-24 pl-12'>
-              <img src={Profile} alt="Sample Profile image" className='rounded-full '/>
+    <div className='m-16 border-2  border-black rounded-lg w-2/5 flex h-[85vh] overflow-auto'>
+      <div className='h-full bg-slate-600 max-w-[100vh] p-12'>
+            <div className='pt-24 pl-12 flex w-full justify-center'>
+              <img src={Profile} alt="Sample Profile image" className='rounded-full h-48 w-48 '/>
             </div>
 
 
@@ -26,7 +26,7 @@ const Display = () => {
         </div>
 
       <div className='ml-8 flex flex-col '>
-        <h1 className='font-bold text-6xl mt-48'>Eureka Teklemariam Haile</h1>
+        <h1 className='font-bold text-3xl mt-48'>Eureka Teklemariam Haile</h1>
         <div>
           <h1 className='font-bold font-mono underline text-3xl mt-24'>Profile</h1>
         </div>
