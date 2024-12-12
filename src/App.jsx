@@ -1,6 +1,5 @@
-import React from 'react'
+import React,{useState} from 'react'
 import NavBar from './components/NavBar'
-import Form from './components/Form'
 import Display from './components/Display'
 import Footer from './components/Footer'
 import General from './components/General'
@@ -8,6 +7,8 @@ import Education from './components/Education'
 import Work from './components/Work'
 
 const App = () => {
+
+  const [userInfo,setUserInfo] = useState('');
   return (
     <div className='h-screen'>
 
@@ -15,12 +16,12 @@ const App = () => {
 
       <div className='flex flex-row gap-4'>
         <div className='m-16 border-2 p-4 border-black rounded-lg w-2/5 '>
-          <General />
-          <Education />
-          <Work />
+          <General setUserInfo={setUserInfo}/>
+          <Education setUserInfo={setUserInfo}/>
+          <Work setUserInfo={setUserInfo}/>
         </div>
 
-        <Display />
+        <Display userInfo ={userInfo}/>
       </div>
 
 

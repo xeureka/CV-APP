@@ -2,7 +2,7 @@ import React from 'react'
 import Profile from '../assets/pfp2.jpeg'
 import {FaMobile,FaEnvelope,FaHouseUser} from 'react-icons/fa'
 
-const Display = () => {
+const Display = ({blogContent}) => {
   return (
     <div className='m-16 border-2  border-black rounded-lg w-2/5 flex h-[85vh] overflow-auto'>
       <div className='h-full bg-slate-600 max-w-[100vh] p-12'>
@@ -26,7 +26,7 @@ const Display = () => {
         </div>
 
       <div className='ml-8 flex flex-col '>
-        <h1 className='font-bold text-3xl mt-48'>Eureka Teklemariam Haile</h1>
+        <h1 className='font-bold text-3xl mt-48'>{blogContent}</h1>
         <div>
           <h1 className='font-bold font-mono underline text-3xl mt-24'>Profile</h1>
         </div>
